@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcoholic Drinks</title>
+    <style>
+        /* Reset some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and background */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        .header {
+            background-color: #333;
+            color: #ffcc00;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.2rem;
+        }
+
+        /* Content styling */
+        .content {
+            padding: 40px 20px;
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        /* Product grid styling */
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        /* Individual product card */
+        .product {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .product p {
+            margin: 5px 0;
+        }
+        .product .price {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Alcoholic Drinks Collection</h1>
+        <p>Discover our premium selection of alcoholic beverages</p>
+    </div>
+
+    <div class="content">
+        <h2>Featured Drinks</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="R1.jfif" alt="Whiskey">
+                <p>Whiskey</p>
+                <p class="price">$12.00</p>
+            </div>
+            <div class="product">
+                <img src="R3.jpg" alt="Vodka">
+                <p>Vodka</p>
+                <p class="price">$10.00</p>
+        </div>
+    </div>
+
+</body>
+</html>
